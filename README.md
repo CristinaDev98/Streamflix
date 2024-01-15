@@ -1,3 +1,5 @@
+Streamflix è un progetto Laravel clone di Netflix creato usando TALL stack (Tailwindcss, Alpinejs, Laravel, Livewire).
+
 ## Installazione delle Dipendenze PHP
 composer install
 
