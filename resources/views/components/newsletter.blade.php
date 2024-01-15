@@ -1,4 +1,4 @@
-<p class="my-3 px-12 text-center">Want us to email you occasionally with Vetflix news?
+<p class="my-3 px-12 text-center">Want us to email you occasionally with Streamflix news?
 </p>
 
 <div class="relative mx-auto inline-block lg:bg-gray-100">

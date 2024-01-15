@@ -7,7 +7,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 
-class VelflixController extends Controller
+class StreamflixController extends Controller
 {
     /**
      * @param  mixed  $genreId
@@ -37,7 +37,7 @@ class VelflixController extends Controller
                 ->json()['results'];
         });
 
-        $velflixgenres = Cache::remember('movies_genres', 60 * 60, function () {
+        $streamflixgenres = Cache::remember('movies_genres', 60 * 60, function () {
             return Http::withToken(config('services.tmdb.token'))
             ->get('https://api.themoviedb.org/3/genre/movie/list')
             ->json()['genres'];
@@ -51,7 +51,7 @@ class VelflixController extends Controller
         $animation = $this->getMoviesByGenre(16);
 
         /** @psalm-suppress UndefinedClass **/
-        $genres = collect($velflixgenres)->mapWithKeys(function ($genre) {  /** @phpstan-ignore-line */
+        $genres = collect($streamflixgenres)->mapWithKeys(function ($genre) {  /** @phpstan-ignore-line */
             return [$genre['id'] => $genre['name']];
         });
 

@@ -1,7 +1,7 @@
 <div class="body-font fixed top-0 z-50 w-full bg-black text-white">
     <div class="flex flex-col flex-wrap items-center p-5 px-16 md:flex-row">
-        <a class="title-font mb-4 flex items-center text-2xl font-bold uppercase md:mb-0" style="color: #e50914">
-            Velflix
+        <a href="{{route('home')}}" class="title-font mb-4 flex items-center text-2xl font-bold uppercase md:mb-0" style="color: #e50914">
+            Streamflix
         </a>
 
         @auth
@@ -17,7 +17,7 @@
 
         <nav class="hidden flex-wrap items-center justify-center space-x-6 text-base font-bold md:ml-auto lg:flex">
             @auth
-                <livewire:search-velflix />
+                <livewire:search-streamflix />
                 <x-bi-gift class="h-5 w-5" />
                 <x-bi-bell-fill class="h-5 w-5" />
                 {{-- <span class="text-xs font-bold uppercase">Welcome, {{ auth()->user()->name }}!</span> --}}

@@ -7,7 +7,7 @@
     @auth
         <div class="z-30 flex flex-row justify-end px-12 py-4">
             <div class="cursor-pointer rounded bg-red-600 px-4 py-1 text-gray-100">
-                <a href="{{ route('velflix.index') }}" clas="px-4 py-1 text-gray-100 bg-red-600 rounded cursor-pointer">
+                <a href="{{ route('streamflix.index') }}" clas="px-4 py-1 text-gray-100 bg-red-600 rounded cursor-pointer mt-5">
                     Watch Movie &rsaquo;
                 </a>
             </div>
